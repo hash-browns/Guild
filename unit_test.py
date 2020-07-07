@@ -1,5 +1,5 @@
 import unittest
-from guidsld import foodOrder
+from dog_functions import foodOrder
 
 class NamesTestCase(unittest.TestCase):
 
