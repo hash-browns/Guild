@@ -5,8 +5,8 @@ def foodOrder(smallDogs,mediumDogs,largeDogs,surplusFood):
     
 def overCapacity(smallDogs,mediumDogs,largeDogs):
     totalDogs = float(smallDogs) + float(mediumDogs) + float(largeDogs)
-    if totalDogs > 30 or totalDogs < 0: 
-        print ("Number of dogs doesnt match owner capacity")
+    if totalDogs > 30: 
+        print ("Number of dogs over owner capacity")
         exit()
     
    
