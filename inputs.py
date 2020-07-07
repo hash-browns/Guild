@@ -1,5 +1,5 @@
-from dog_function import foodOrder
-from dog_function import overCapacity
+from dog_functions import foodOrder
+from dog_functions import overCapacity
 
 smallDogs = None
 while smallDogs == None:
