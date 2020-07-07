@@ -1,39 +1,43 @@
 from dog_functions import foodOrder
 from dog_functions import overCapacity
 
-smallDogs = None
-while smallDogs == None:
-    try:
-        smallDogs = input("How many small dogs need food?")
-        if int(smallDogs) < 0:
-           print('Value cant be less than zero.')
-           smallDogs = None
-    except ValueError:
+while True: 
+  try:
+      smallDogs = int(input("How many small dogs need food?"))
+      assert(smallDogs >= 0), 'Number must be bigger than or equal to 0'
+  except ValueError:
         print('Numerical values only, please.')
+  else:
+      break
 
-mediumDogs  = None
-while mediumDogs  == None:
-    try:
-        mediumDogs  = input("How many medium dogs need food?")
-        if int(mediumDogs) < 0:
-           print('Value cant be less than zero.')
-           mediumDogs  = None
-    except ValueError:
+while True: 
+  try:
+      mediumDogs = int(input("How many medium dogs need food?"))
+      assert(mediumDogs >= 0), 'Number must be bigger than or equal to 0'
+  except ValueError:
         print('Numerical values only, please.')
+  else:
+      break 
 
-largeDogs  = None
-while largeDogs  == None:
-    try:
-        largeDogs  = input("How many large dogs need food?")
-        if int(largeDogs) < 0:
-           print('Value cant be less than zero.')
-           largeDogs  = None
-    except ValueError:
-        print('Numerical values only, please.')        
+while True: 
+  try:
+      largeDogs = int(input("How many large dogs need food?"))
+      assert(largeDogs >= 0), 'Number must be bigger than or equal to 0'
+  except ValueError:
+        print('Numerical values only, please.')
+  else:
+      break                   
 
 overCapacity(largeDogs,mediumDogs,smallDogs)
 
-surplusFood = input("How much food was leftover from last month (in lbs)?")
+while True: 
+  try:
+      surplusFood = int(input("How much food was leftover from last month (in lbs)?"))
+      assert(surplusFood >= 0), 'Number must be bigger than or equal to 0'
+  except ValueError:
+        print('Numerical values only, please.')
+  else:
+      break 
 
 result = foodOrder(smallDogs,mediumDogs,largeDogs,surplusFood)
 print("Total lbs of food to order " + str(result))
