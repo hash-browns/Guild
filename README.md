@@ -1,5 +1,7 @@
 # Guild
-1.git clone guild
-2.cd guild
-3.python3 -m unittest -v unit_test.py
-4. python3 inputs.py
+<ol>
+ 
+<li>1.git clone guild</li>
+<li>2.cd guild</li>
+<li>3.python3 -m unittest -v unit_test.py</li>
+<li>4. python3 inputs.py</li>
